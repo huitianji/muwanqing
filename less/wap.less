@@ -1,0 +1,15 @@
+//通用
+@a: (750/100);
+@r: (@a * 10);
+
+//
+@import "_common";
+@import "_mixins";
+//
+//
+body{
+  width: 750/@r*1rem;
+  min-height: 100/@r*1rem;
+  margin: 0px auto;
+  background-color: gainsboro;
+}

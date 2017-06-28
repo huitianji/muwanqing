@@ -1,4 +1,6 @@
-
+body{
+  min-height: 600px;
+}
 .muq-width(){
   width: 1000px;
 }
@@ -180,6 +182,7 @@
       padding-left: 15px;
       border-bottom: 1px solid #ececec;
       font-size: 18px;
+
     }
     .txt{
       padding: 8px;
@@ -188,6 +191,13 @@
         display: block;
         padding-bottom: 5px;
       }
+      strong{
+        color: #ff6600;
+        font-size: 20px;
+      }
+    }
+    .qrcode{
+      text-align: center;
     }
   }
   .asidev1{
@@ -208,6 +218,87 @@
       font-weight: bold;
       color: #f60;
     }
+  }
+}
+.mwq-title{
+  width: 1000px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0px auto;
+  font-size: 16px;
+  color:#888;
+  border-bottom: 1px solid #ececec;
+  .clearfix();
+  @keyframes myfirst
+  {
+    0%   {transform:scale(1,1);}
+    //20%  {transform:scale(1.3,1.3);}
+    //40%  {transform:scale(1.6,1.6);}
+    50%  {transform:scale(1.3,1.3);}
+    //80%  {transform:scale(1.1,1.1);}
+    100% {transform:scale(1,1);}
+  }
+  .name{
+    display: block;
+    float: left;
+  }
+  .tip{
+    float: left;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#f60;
+    animation: myfirst 10s infinite;
+
+  }
+}
+.mwq-v2{
+  width: 1000px;
+  margin: 15px auto 0px auto;
+  border-top:1px solid #ececec;
+  border-right:1px solid #ececec;
+  .item{
+    float: left;
+    width: 332px;
+    height:332px;
+    border-left:1px solid #ececec;
+    border-bottom:1px solid #ececec;
+  }
+  .txtshow{
+    >p{
+      line-height: 28px;
+      padding: 10px;
+      font-size: 16px;
+      >strong{
+        display: block;
+      }
+      >span{
+        display: block;
+        text-indent: 2em;
+      }
+    }
+  }
+}
+.mwq-footer{
+  height: 50px;
+  line-height: 50px;
+  color:#666;
+  text-align: center;
+}
+.mwq-sidebar{
+  position: fixed;
+  top:50%;
+  left: 20px;
+  width: 130px;
+  height: 200px;
+  margin-top: -100px;
+  border: 1px solid #ececec;
+  background-color: #fff;
+  .border-radius(4px);
+  .qr{
+    height: 100px;
+    padding-top: 15px;
+    text-align: center;
   }
 }
 

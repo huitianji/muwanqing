@@ -1,6 +1,7 @@
 body{
   min-height: 600px;
   padding-bottom: 70px;
+  background-color: #fafafa;
 }
 .muq-width(){
   width: 1000px;
@@ -16,7 +17,7 @@ body{
 .mwq-head{
   height: 34px;
   line-height: 34px;
-  //background-color: #ff635c;
+  background-color: #fff;
   border-bottom: 1px solid #ebebeb;
   .head{
     margin: 0px auto;
@@ -102,8 +103,9 @@ body{
   }
 }
 .mwq-nav{
-  height: 100px;
+  height: 80px;
   border-bottom: 1px solid #ebebeb;
+  background-color: #fff;
   .box-shadow(inset 0px 0px 3px,#e5e5e5);
   .nav{
     .muq-width();
@@ -113,31 +115,36 @@ body{
   .logo{
     display: block;
     width: 120px;
-    height: 100px;
+    height: 80px;
     float: left;
-    background-color:rgba(0,0,0,0.1);
+    //background-color:rgba(0,0,0,0.1);
 
   }
   .list{
     float: left;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-left: 40px;
     >a{
       display: block;
       float: left;
-      height: 57px;
-      line-height: 57px;
+      height: 47px;
+      line-height: 47px;
       margin-left: 30px;
       color: #666;
       font-size: 18px;
       padding: 0 15px;
 
       border-bottom: 3px solid #fff;
-      .transition();
+      //.transition();
       &:hover{
         color:#f60;
         border-bottom: 3px solid #f60;
       }
+      &.current{
+        color:#f60;
+        border-bottom: 3px solid #f60;
+      }
+
     }
   }
 }
@@ -145,8 +152,9 @@ body{
 .mwq-banner{
   width: 1000px;
   margin: 0px auto;
-  height: 300px;
-  background-color: grey;
+  height: 330px;
+  overflow: hidden;
+  background-color: #fff;
 }
 .swiper-container {
   width: 1000px;
@@ -166,27 +174,28 @@ body{
   width: 1000px;
   margin: 0px auto;
   padding-top: 15px;
+  background-color: #fff;
   .aside{
     width: 680px;
     float: left;
   }
   .notice{
-    width: 280px;
+    width: 260px;
     float: right;
-    height: 220px;
+    height: 240px;
     border: 1px solid #ececec;
     >span{
       display: block;
-      height: 40px;
-      line-height: 40px;
-      padding-left: 15px;
+      height: 30px;
+      line-height: 30px;
       border-bottom: 1px solid #ececec;
       font-size: 18px;
+      text-align: center;
 
     }
     .txt{
       padding: 8px;
-      font-size: 14px;
+      font-size: 12px;
       >span{
         display: block;
         padding-bottom: 5px;
@@ -201,16 +210,16 @@ body{
     }
   }
   .asidev1{
-    width: 360px;
-    height: 222px;
+    width: 390px;
+    height: 242px;
     float: left;
     overflow: hidden;
   }
   .asidev2{
     float: left;
-    width: 338px;
-    height: 210px;
-    line-height: 21px;
+    width: 328px;
+    height: 230px;
+    line-height: 22px;
     padding: 5px 0px 5px 5px;
     margin-left: 6px;
     border: 1px solid #ececec;
@@ -225,9 +234,11 @@ body{
   height: 50px;
   line-height: 50px;
   margin: 0px auto;
+
   font-size: 16px;
   color:#888;
   border-bottom: 1px solid #ececec;
+  background-color: #fff;
   .clearfix();
   @keyframes myfirst
   {
@@ -241,10 +252,11 @@ body{
   .name{
     display: block;
     float: left;
+    padding-left: 15px;
   }
   .tip{
     float: left;
-    padding-left: 15px;
+    padding-left: 25px;
     font-size: 18px;
     font-weight: bold;
     color:#f60;
@@ -252,11 +264,18 @@ body{
 
   }
 }
+.mwq-spcing{
+  width: 1000px;
+  margin: 0px auto 0px auto;
+  height: 15px;
+  background-color: #fff;
+}
 .mwq-v2{
   width: 1000px;
-  margin: 15px auto 0px auto;
+  margin: 0px auto 0px auto;
   border-top:1px solid #ececec;
   border-right:1px solid #ececec;
+  background-color: #fff;
   .item{
     float: left;
     width: 332px;
@@ -282,6 +301,7 @@ body{
 .mwq-footer{
   height: 50px;
   line-height: 50px;
+  padding-top: 20px;
   color:#666;
   text-align: center;
 }
@@ -289,19 +309,20 @@ body{
   position: fixed;
   top:50%;
   left: 20px;
+  z-index: 1;
   width: 130px;
   height: 210px;
   margin-top: -105px;
   border: 1px solid #ececec;
   background-color: #fff;
   .border-radius(4px);
+  .box-shadow(0px 0px 3px,#000);
   .qr{
-    height: 100px;
-    padding-top: 15px;
+    height: 150px;
     text-align: center;
   }
   .qr-txt{
-    padding: 5px 0px 0px 15px;
+    padding: 0px 0px 0px 15px;
     line-height: 19px;
     strong{
       font-size: 16px;
@@ -329,6 +350,72 @@ body{
       font-size: 20px;
       color:#f60;
       font-weight: bold;
+    }
+  }
+}
+
+.mwqjc-cols{
+  width: 1000px;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #ececec;
+  background-color: #fff;
+  text-align: center;
+}
+.mwq-product{
+  width: 1000px;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #ececec;
+  background-color: #fff;
+  text-align: center;
+  .nametit{
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 10px;
+    font-size: 26px;
+    color:#666;
+    font-weight: bold;
+    border-bottom: 1px solid #ececec;
+  }
+  .item{
+    img{
+      width: 100%;
+    }
+  }
+}
+.mwq-joinus{
+  width: 1000px;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #ececec;
+  background-color: #fff;
+  .name-title{
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color:#666;
+    border-bottom: 1px solid #ececec;
+  }
+  .colvs{
+    .clearfix();
+    padding: 20px 150px 10px 0px;
+  }
+  .joinshow{
+    width: 430px;
+    padding-right: 20px;
+    line-height: 24px;
+    font-size: 14px;
+    >strong{
+      display: block;
+      padding-bottom: 10px;
+    }
+    >span{
+      display: block;
+      padding-left: 10px;
+    }
+    >div{
+      padding-left: 10px;
     }
   }
 }
